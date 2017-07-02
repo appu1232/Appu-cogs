@@ -176,7 +176,7 @@ class Terminal:
                 check_folder()
                 check_file()
 
-            if message.content.startswith(self.prefix) or message.content.startswith('debugprefixcmd') and self.bot.user.id == message.author.id:
+            if (message.content.startswith(self.prefix) or message.content.startswith('debugprefixcmd')) and self.bot.user.id == message.author.id:
                 command = message.content.split(self.prefix)[1]
                 # check if the message starts with the command prefix
 
